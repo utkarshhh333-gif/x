@@ -5,6 +5,7 @@ import { FadeIn } from "@/components/fade-in";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { PageHero } from "@/components/page-hero";
+import { contactEmail, whatsappLink, whatsappNumber } from "@/lib/contact";
 
 export const metadata: Metadata = {
   title: "Contact - X",
@@ -21,10 +22,6 @@ const projectTypes = [
 ];
 
 export default function ContactPage() {
-  const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "NEXT_PUBLIC_CONTACT_EMAIL";
-  const whatsapp =
-    process.env.NEXT_PUBLIC_WHATSAPP_LINK ?? "NEXT_PUBLIC_WHATSAPP_LINK";
-
   return (
     <>
       <Navbar />
@@ -40,8 +37,8 @@ export default function ContactPage() {
                 Project inquiries stay lightweight.
               </p>
               <p className="mt-3 leading-7 text-zinc-400">
-                No personal phone numbers are exposed in the frontend. Replace
-                contact placeholders with public environment variables when ready.
+                Share the project goal, timeline, and current bottleneck. The
+                inquiry can open directly in WhatsApp with the details ready.
               </p>
             </div>
           }
@@ -55,14 +52,26 @@ export default function ContactPage() {
                 <h2 className="mt-5 text-xl font-semibold text-zinc-50">
                   Email
                 </h2>
-                <p className="mt-2 break-words text-zinc-400">{email}</p>
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="mt-2 block break-words text-zinc-400 transition hover:text-accent"
+                >
+                  {contactEmail}
+                </a>
               </div>
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
                 <MessageCircle className="h-5 w-5 text-accent" aria-hidden="true" />
                 <h2 className="mt-5 text-xl font-semibold text-zinc-50">
                   WhatsApp
                 </h2>
-                <p className="mt-2 break-words text-zinc-400">{whatsapp}</p>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 block break-words text-zinc-400 transition hover:text-accent"
+                >
+                  +91 {whatsappNumber}
+                </a>
               </div>
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
                 <Clock3 className="h-5 w-5 text-accent" aria-hidden="true" />

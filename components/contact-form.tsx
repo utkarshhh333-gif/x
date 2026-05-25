@@ -1,11 +1,9 @@
 "use client";
 
 import { type FormEvent, useEffect, useState } from "react";
+import { whatsappLink } from "@/lib/contact";
 
-const whatsappLink = process.env.NEXT_PUBLIC_WHATSAPP_LINK;
-// Add your real wa.me link in `.env.local` as NEXT_PUBLIC_WHATSAPP_LINK.
-
-type SubmitState = "idle" | "sharing" | "shared" | "missing-url";
+type SubmitState = "idle" | "sharing" | "shared";
 
 function readFormValue(formData: FormData, key: string) {
   return String(formData.get(key) || "").trim();
@@ -65,18 +63,13 @@ export function ContactForm() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if (!whatsappLink) {
-      setSubmitState("missing-url");
-      return;
-    }
-
     setSubmitState("sharing");
 
     const formData = new FormData(event.currentTarget);
     const message = buildWhatsAppMessage(formData);
     const shareUrl = buildWhatsAppUrl(message);
 
-    window.location.href = shareUrl;
+    window.open(shareUrl, "_blank", "noopener,noreferrer");
     setSubmitState("shared");
   }
 
@@ -190,15 +183,12 @@ export function ContactForm() {
         disabled={submitState === "sharing"}
         className="button-primary mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-black disabled:cursor-not-allowed disabled:opacity-60"
       >
-        {submitState === "sharing" ? "Opening WhatsApp..." : "Share on WhatsApp"}
+        {submitState === "sharing" ? "Opening..." : "Share"}
       </button>
 
       <p className="mt-4 min-h-5 text-sm text-zinc-400" aria-live="polite">
         {submitState === "shared"
           ? "WhatsApp opened with the project message ready to send."
-          : null}
-        {submitState === "missing-url"
-          ? "WhatsApp is not connected yet. Please use the contact details for now."
           : null}
       </p>
     </form>

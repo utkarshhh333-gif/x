@@ -18,6 +18,7 @@ import { FadeIn } from "@/components/fade-in";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { SectionHeader } from "@/components/section-header";
+import { contactEmail, whatsappLink, whatsappNumber } from "@/lib/contact";
 import {
   conceptFeedback,
   processSteps,
@@ -355,14 +356,29 @@ export default function Home() {
               </h2>
               <p className="mt-6 max-w-xl leading-8 text-zinc-400">
                 Share the goal, the current bottleneck, and the kind of project
-                you have in mind. The contact destinations are configured with
-                environment variables so private details stay out of the code.
+                you have in mind. Send the inquiry on WhatsApp or reach out by
+                email directly.
               </p>
               <div className="mt-8 space-y-3 text-sm text-zinc-400">
-                <p>Email: {process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "NEXT_PUBLIC_CONTACT_EMAIL"}</p>
+                <p>
+                  Email:{" "}
+                  <a
+                    href={`mailto:${contactEmail}`}
+                    className="transition hover:text-accent"
+                  >
+                    {contactEmail}
+                  </a>
+                </p>
                 <p>
                   WhatsApp:{" "}
-                  {process.env.NEXT_PUBLIC_WHATSAPP_LINK ?? "NEXT_PUBLIC_WHATSAPP_LINK"}
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition hover:text-accent"
+                  >
+                    +91 {whatsappNumber}
+                  </a>
                 </p>
               </div>
             </FadeIn>
