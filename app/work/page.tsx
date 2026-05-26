@@ -8,7 +8,7 @@ import { PageHero } from "@/components/page-hero";
 import { projects } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Work - X",
+  title: "Work - Utkarsh",
   description:
     "Detailed concept systems and demo projects for premium web systems, AI automation, and AI integration.",
 };

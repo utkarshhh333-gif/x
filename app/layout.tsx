@@ -2,21 +2,21 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "X - Web Systems & AI Integration",
+  title: "Utkarsh - Web Systems & AI Integration",
   description:
     "Premium websites, AI automation, and AI integration for modern businesses.",
   metadataBase: new URL("https://example.com"),
   openGraph: {
-    title: "X - Web Systems & AI Integration",
+    title: "Utkarsh - Web Systems & AI Integration",
     description:
       "Premium websites, AI automation, and AI integration for modern businesses.",
     type: "website",
     url: "/",
-    siteName: "X",
+    siteName: "Utkarsh",
   },
   twitter: {
     card: "summary_large_image",
-    title: "X - Web Systems & AI Integration",
+    title: "Utkarsh - Web Systems & AI Integration",
     description:
       "Premium websites, AI automation, and AI integration for modern businesses.",
   },

@@ -19,7 +19,7 @@ function buildWhatsAppMessage(formData: FormData) {
   const message = readFormValue(formData, "message");
 
   return [
-    "New project inquiry from X website",
+    "New project inquiry from Utkarsh website",
     "",
     `Name: ${name}`,
     `Phone: ${phone}`,

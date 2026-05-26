@@ -18,10 +18,10 @@ export function Navbar() {
       >
         <Link
           href="/"
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-lg font-semibold text-zinc-50 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-black"
-          aria-label="X home"
+          className="flex min-h-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] px-4 text-sm font-semibold text-zinc-50 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-black"
+          aria-label="Utkarsh home"
         >
-          X
+          Utkarsh
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">

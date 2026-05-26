@@ -7,9 +7,9 @@ import { Navbar } from "@/components/navbar";
 import { PageHero } from "@/components/page-hero";
 
 export const metadata: Metadata = {
-  title: "About - X",
+  title: "About - Utkarsh",
   description:
-    "Agency positioning, process, and philosophy for X, a boutique web and AI systems studio.",
+    "Agency positioning, process, and philosophy for Utkarsh, a boutique web and AI systems studio.",
 };
 
 const philosophy = [
@@ -43,7 +43,7 @@ export default function AboutPage() {
         <PageHero
           eyebrow="About"
           title="A compact studio for premium web and AI systems."
-          description="X is positioned for businesses that need modern execution without agency bloat: clean strategy, refined interface design, fast development, and practical integration thinking."
+          description="Utkarsh is positioned for businesses that need modern execution without agency bloat: clean strategy, refined interface design, fast development, and practical integration thinking."
           aside={
             <div className="premium-panel rounded-[2rem] p-6">
               <p className="text-sm text-zinc-500">Studio stance</p>
@@ -66,13 +66,13 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.08} className="space-y-6 text-lg leading-8 text-zinc-400">
               <p>
-                X builds websites, automation workflows, AI integrations, and
+                Utkarsh builds websites, automation workflows, AI integrations, and
                 business interfaces for teams that care about speed, presentation,
                 and operational usefulness.
               </p>
               <p>
                 The agency direction is intentionally focused. Instead of offering
-                every possible digital service, X concentrates on the layer where
+                every possible digital service, Utkarsh concentrates on the layer where
                 modern businesses most often leak opportunity: slow websites,
                 poor inquiry handling, repeated manual tasks, and disconnected
                 customer touchpoints.

@@ -7,7 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { PageHero } from "@/components/page-hero";
 
 export const metadata: Metadata = {
-  title: "Services - X",
+  title: "Services - Utkarsh",
   description:
     "Website development, AI automation, and AI integration services for modern businesses.",
 };
@@ -69,7 +69,7 @@ export default function ServicesPage() {
         <PageHero
           eyebrow="Services"
           title="Focused services for fast, intelligent business systems."
-          description="X keeps the service offer deliberately sharp: premium websites, useful automation, and AI integration that improves the actual workflow."
+          description="Utkarsh keeps the service offer deliberately sharp: premium websites, useful automation, and AI integration that improves the actual workflow."
           aside={
             <div className="premium-panel rounded-[2rem] p-6">
               <p className="text-sm text-zinc-500">Service model</p>

@@ -157,7 +157,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="Services"
               title="Focused systems for serious business execution."
-              description="X combines premium web craft with useful automation and AI, keeping every layer clean, fast, and easy to operate."
+              description="Utkarsh combines premium web craft with useful automation and AI, keeping every layer clean, fast, and easy to operate."
             />
             <div className="mt-12 grid gap-4 lg:grid-cols-3">
               {services.map((service, index) => {
@@ -187,7 +187,7 @@ export default function Home() {
             <SectionHeader
               eyebrow="Featured work"
               title="Concept systems with production-grade thinking."
-              description="No fake client claims. These are demo systems built to show how X thinks through business problems, interfaces, and automation."
+              description="No fake client claims. These are demo systems built to show how Utkarsh thinks through business problems, interfaces, and automation."
             />
             <div className="mt-12 grid gap-5 lg:grid-cols-3">
               {projects.map((project, index) => (
@@ -313,7 +313,7 @@ export default function Home() {
           <FadeIn className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-white/10 bg-white/[0.03] p-7 sm:p-10 lg:grid-cols-[0.75fr_1.25fr] lg:p-14">
             <div>
               <p className="text-sm font-medium uppercase tracking-[0.22em] text-accent">
-                About X
+                About Utkarsh
               </p>
               <h2 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">
                 Focused, technical, and built for useful outcomes.
@@ -321,7 +321,7 @@ export default function Home() {
             </div>
             <div className="text-lg leading-8 text-zinc-400">
               <p>
-                X is a focused web and AI systems studio building clean digital
+                Utkarsh is a focused web and AI systems studio building clean digital
                 experiences, automation workflows, and practical AI integrations
                 for businesses that want speed, clarity, and modern execution.
               </p>

@@ -1,4 +1,4 @@
-# X Agency Portfolio
+# Utkarsh Agency Portfolio
 
 Premium frontend portfolio website for a boutique web systems and AI integration studio.
 

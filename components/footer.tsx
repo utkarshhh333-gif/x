@@ -12,7 +12,7 @@ export function Footer() {
     <footer className="border-t border-white/10 px-5 py-10 sm:px-8 lg:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-lg font-semibold text-zinc-50">X</p>
+          <p className="text-lg font-semibold text-zinc-50">Utkarsh</p>
           <p className="mt-1 text-sm text-zinc-500">
             Web Systems & AI Integration
           </p>
@@ -29,7 +29,7 @@ export function Footer() {
           ))}
         </div>
         <p className="text-sm text-zinc-600">
-          (c) {new Date().getFullYear()} X. All rights reserved.
+          (c) {new Date().getFullYear()} Utkarsh. All rights reserved.
         </p>
       </div>
     </footer>

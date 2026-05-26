@@ -8,9 +8,9 @@ import { PageHero } from "@/components/page-hero";
 import { contactEmail, whatsappLink, whatsappNumber } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "Contact - X",
+  title: "Contact - Utkarsh",
   description:
-    "Start a website, AI automation, or AI integration project with X.",
+    "Start a website, AI automation, or AI integration project with Utkarsh.",
 };
 
 const projectTypes = [
