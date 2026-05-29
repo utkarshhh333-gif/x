@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 const detailedProjects = [
   {
     name: "Real Estate Lead System",
+    livePath: "https://dashing-daifuku-0126fe.netlify.app/",
     category: "Lead capture and qualification",
     summary:
       "A concept system for property teams that need faster inquiry capture, cleaner qualification, and clearer handoff from website to sales workflow.",
@@ -32,6 +33,7 @@ const detailedProjects = [
   },
   {
     name: "AI Support Website",
+    livePath: null,
     category: "Support experience and knowledge flow",
     summary:
       "A practical AI support concept for businesses that want customers to find answers without turning the site into a noisy chatbot gimmick.",
@@ -48,6 +50,7 @@ const detailedProjects = [
   },
   {
     name: "Business Automation Dashboard",
+    livePath: null,
     category: "Internal operations interface",
     summary:
       "A dashboard concept for tracking repeated operations, task status, handoffs, and automation health in a calm internal tool.",
@@ -133,6 +136,15 @@ export default function WorkPage() {
                       </span>
                     ))}
                   </div>
+                  {project.livePath ? (
+                    <Link
+                      href={project.livePath}
+                      className="button-primary mt-7 inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-medium transition"
+                    >
+                      View Live Sample
+                      <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                    </Link>
+                  ) : null}
                 </div>
                 <div className="grid gap-4">
                   <div className="rounded-3xl border border-white/10 bg-black/20 p-5">
